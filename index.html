@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!--
+  ИМЯ СТУДИИ: ZAYAVKIN (решение Саши 28.10). Латиницей стоит только в шапке (логотип).
+  Кириллицей «Студия Заявкин» (закон о языке) в title, og:title, og:site_name,
+  aria-label шапки и подвале. Больше нигде. Менять через Python
+  (str.replace), не через sed: BSD sed побайтно ломает кириллицу в шаблонах с [ ].
+  В шапке имя всё равно выйдет прописными (так задано в CSS).
+  Город на часах: строка с class="clock" (data-city и пояс data-tz). data-city="" убирает часы.
+  Контакт: блок id="kontakt".
+  Тексты вычитаны копирайтером 28.10.
+  og:image ждёт адрес публикации: сейчас стоит https://turbosushka.github.io/vitrina/.
+-->
+<title>Студия Заявкин · Премиальные сайты под ключ</title>
+<meta name="description" content="Сайты уровня модных домов и девелоперов. Дизайн, фото, видео, анимацию и тексты делаем сами.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Студия Заявкин">
+<meta property="og:title" content="Студия Заявкин · Премиальные сайты под ключ">
+<meta property="og:description" content="Дом вечерней одежды, сеть бистро и клубные виллы. Три сайта, которые мы придумали и сделали сами.">
+<meta property="og:image" content="https://turbosushka.github.io/vitrina/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0D0C0B">
+<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/sofia-sans-xc-600-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+
+<!-- ============ 1. Шоурил ============ -->
+<section class="reel" id="top" aria-roledescription="карусель" aria-label="Наши сайты">
+  <div class="slides">
+    <div class="slide is-on">
+      <picture><source media="(max-width: 500px)" srcset="assets/media/vesper-poster-m.webp"><img src="assets/media/vesper-poster.webp" alt="" width="1280" height="720" fetchpriority="high" draggable="false"></picture>
+      <video muted playsinline loop preload="none" data-src="assets/media/vesper" aria-hidden="true"></video>
+    </div>
+    <div class="slide">
+      <picture><source media="(max-width: 500px)" srcset="assets/media/maslo-poster-m.webp"><img src="assets/media/maslo-poster.webp" alt="" width="1280" height="720" fetchpriority="low" draggable="false"></picture>
+      <video muted playsinline loop preload="none" data-src="assets/media/maslo" aria-hidden="true"></video>
+    </div>
+    <div class="slide">
+      <picture><source media="(max-width: 500px)" srcset="assets/media/grani-poster-m.webp"><img src="assets/media/grani-poster.webp" alt="" width="1280" height="720" fetchpriority="low" draggable="false"></picture>
+      <video muted playsinline loop preload="none" data-src="assets/media/grani" aria-hidden="true"></video>
+    </div>
+  </div>
+
+  <header class="hd">
+    <h1 class="brand"><span class="mark" id="studio" role="img" aria-label="Студия Заявкин">ZAYAVKIN</span><span class="tag"><span class="tag__main">Премиальные сайты под ключ</span><span class="tag__sub">видео · анимация · 3D · любая&nbsp;задумка</span></span></h1>
+    <div class="hd-r"><span class="clock" data-city="Москва" data-tz="Europe/Moscow" hidden></span><a class="u hit" href="#kontakt">Обсудить сайт</a></div>
+  </header>
+
+  <div class="caps">
+    <div class="cap is-on">
+      <div class="mask"><p class="name">VESPÉR</p></div>
+      <div class="meta"><p class="niche">Дом вечерней одежды · концепт</p><a class="go u" href="https://turbosushka.github.io/vesper/" target="_blank" rel="noopener">Смотреть сайт <svg class="icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.5 10.5l7-7M5 3.5h5.5V9"/></svg></a></div>
+    </div>
+    <div class="cap">
+      <div class="mask"><p class="name">МАСЛО</p></div>
+      <div class="meta"><p class="niche">Сеть бистро · концепт</p><a class="go u" href="https://turbosushka.github.io/maslo/" target="_blank" rel="noopener">Смотреть сайт <svg class="icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.5 10.5l7-7M5 3.5h5.5V9"/></svg></a></div>
+    </div>
+    <div class="cap">
+      <div class="mask"><p class="name">ГРАНИ</p></div>
+      <div class="meta"><p class="niche">Клубные виллы · концепт</p><a class="go u" href="https://turbosushka.github.io/grani/" target="_blank" rel="noopener">Смотреть сайт <svg class="icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.5 10.5l7-7M5 3.5h5.5V9"/></svg></a></div>
+    </div>
+    <span class="count count-m" aria-hidden="true"><span class="num"><i><span>01</span><span>02</span><span>03</span></i></span> <s>/ 03</s></span>
+  </div>
+
+  <nav class="bar" aria-label="Переключить работу">
+    <span class="count" aria-hidden="true"><span class="num"><i><span>01</span><span>02</span><span>03</span></i></span> <s>/ 03</s></span>
+    <button class="seg is-on" type="button" aria-current="true"><i><b></b></i><span>VESPÉR</span></button>
+    <button class="seg" type="button"><i><b></b></i><span>МАСЛО</span></button>
+    <button class="seg" type="button"><i><b></b></i><span>ГРАНИ</span></button>
+  </nav>
+</section>
+
+<!-- ============ 2. Работы ============ -->
+<section class="works" id="raboty" aria-label="Работы">
+  <article class="work">
+    <div class="win" aria-hidden="true">
+      <picture><source media="(max-width: 500px)" srcset="assets/media/vesper-poster-m.webp"><img src="assets/media/vesper-poster.webp" alt="" width="1280" height="720" loading="lazy"></picture>
+      <video muted playsinline loop preload="none" data-src="assets/media/vesper"></video>
+    </div>
+    <h2 class="wname">VESPÉR</h2>
+    <div class="wmeta">
+      <p class="niche">Дом вечерней одежды</p>
+      <ul class="feats"><li>Видео на первом экране идёт за прокруткой</li><li>Коллекция лентой, ткань вблизи</li><li>Кадры в стиле VHS</li></ul>
+      <p class="note">Концепт, бренд вымышлен</p>
+      <a class="go u" href="https://turbosushka.github.io/vesper/" target="_blank" rel="noopener">Смотреть сайт <svg class="icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.5 10.5l7-7M5 3.5h5.5V9"/></svg></a>
+    </div>
+  </article>
+  <article class="work">
+    <div class="win" aria-hidden="true">
+      <picture><source media="(max-width: 500px)" srcset="assets/media/maslo-poster-m.webp"><img src="assets/media/maslo-poster.webp" alt="" width="1280" height="720" loading="lazy"></picture>
+      <video muted playsinline loop preload="none" data-src="assets/media/maslo"></video>
+    </div>
+    <h2 class="wname">МАСЛО</h2>
+    <div class="wmeta">
+      <p class="niche">Сеть бистро, пять страниц</p>
+      <ul class="feats"><li>Огонь движется вместе с прокруткой</li><li>Меню на 22 блюда, фото при наведении</li><li>Бронь стола на сайте</li></ul>
+      <p class="note">Концепт, бренд вымышлен</p>
+      <a class="go u" href="https://turbosushka.github.io/maslo/" target="_blank" rel="noopener">Смотреть сайт <svg class="icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.5 10.5l7-7M5 3.5h5.5V9"/></svg></a>
+    </div>
+  </article>
+  <article class="work">
+    <div class="win" aria-hidden="true">
+      <picture><source media="(max-width: 500px)" srcset="assets/media/grani-poster-m.webp"><img src="assets/media/grani-poster.webp" alt="" width="1280" height="720" loading="lazy"></picture>
+      <video muted playsinline loop preload="none" data-src="assets/media/grani"></video>
+    </div>
+    <h2 class="wname">ГРАНИ</h2>
+    <div class="wmeta">
+      <p class="niche">Клубные виллы, одиннадцать страниц</p>
+      <ul class="feats"><li>Планы этажей с дверями и площадями</li><li>Путь солнца над мысом на сегодня</li><li>Пролёт камеры в каждый дом</li></ul>
+      <p class="note">Концепт, бренд вымышлен</p>
+      <a class="go u" href="https://turbosushka.github.io/grani/" target="_blank" rel="noopener">Смотреть сайт <svg class="icon" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.5 10.5l7-7M5 3.5h5.5V9"/></svg></a>
+    </div>
+  </article>
+</section>
+
+<!-- ============ 3. Титры ============ -->
+<section class="credits" aria-labelledby="credits-h">
+  <h2 class="vh" id="credits-h">Что мы делаем сами</h2>
+  <ul>
+    <li style="--n:0"><span class="c-name">Дизайн</span><span class="c-ex">Мода, бистро, клубные виллы</span></li>
+    <li style="--n:1"><span class="c-name">Вёрстка</span><span class="c-ex">Пять страниц МАСЛО, одиннадцать ГРАНИ</span></li>
+    <li style="--n:2"><span class="c-name">Фото и видео для сайта</span><span class="c-ex">Ткань VESPÉR, огонь МАСЛО, виллы ГРАНИ</span></li>
+    <li style="--n:3"><span class="c-name">Анимация</span><span class="c-ex">Лента коллекции VESPÉR</span></li>
+    <li style="--n:4"><span class="c-name">3D</span><span class="c-ex">Кристалл на главной ГРАНИ</span></li>
+    <li style="--n:5"><span class="c-name">Тексты</span><span class="c-ex">Меню МАСЛО на 22 блюда</span></li>
+  </ul>
+</section>
+
+<!-- ============ 4. Контакт ============ -->
+<section class="contact" id="kontakt" aria-labelledby="kontakt-h">
+  <h2 class="k-title" id="kontakt-h">Обсудим ваш сайт</h2>
+  <p class="k-text">Расскажите о бизнесе. Пришлём бриф на пять минут, а по ответам назовём цену и срок</p>
+  <div class="k-row">
+    <a class="btn" href="https://t.me/turbo_sushka" target="_blank" rel="noopener">Написать в Telegram</a>
+    <a class="u hit" href="https://t.me/turbo_sushka" target="_blank" rel="noopener">@turbo_sushka</a>
+    <a class="u hit" href="mailto:alexandrova_ss@mail.ru">alexandrova_ss@mail.ru</a>
+  </div>
+</section>
+
+<!-- ============ 5. Подвал ============ -->
+<footer class="ft">
+  <p>© 2026 Студия Заявкин. Бренды вымышлены, сайты сделаны как концепты для портфолио</p>
+  <a class="u hit" href="#top">Наверх</a>
+</footer>
+
+</body>
+</html>
